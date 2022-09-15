@@ -1,13 +1,10 @@
 import './index.css'
 import {Component} from 'react'
 
-/* on win an and on fail image urls */
 const winImage = 'https://assets.ccbp.in/frontend/react-js/won-game-img.png'
 const loseImage = 'https://assets.ccbp.in/frontend/react-js/lose-game-img.png'
 
 class WinOrLoseCard extends Component {
-  /** onClickPlayAgain is passed as a paramter to onClick event for play Again button */
-  /** we get isWon status from EmojiGame main page  */
   render() {
     const {isWon, onClickPlayAgain, score} = this.props
     const imageURL = isWon ? winImage : loseImage
